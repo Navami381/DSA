@@ -12,3 +12,18 @@ Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-
 Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
 
 """
+prices = [7,1,5,3,6,4]
+min_price = prices[0]  #min_price means to buying price,7
+max_profit = 0
+
+for selling_price in prices:  
+
+    if selling_price < min_price: #chk 1 <7 
+        min_price = selling_price # 1
+
+    profit = selling_price - min_price  # 5-1=4,3-1=2,6-1=5,4-1=3
+
+    if profit > max_profit: #5>0
+        max_profit = profit  #5
+
+print(max_profit)
