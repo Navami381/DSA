@@ -18,7 +18,7 @@ for num in nums:
         nums[position] = num   #add non zero number to position
         position += 1
 
-while position < len(nums):
+while position < len(nums): #len(nums) is 5 and position=3 ,so 3<5
     nums[position] = 0
     position += 1
 
